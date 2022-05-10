@@ -7,11 +7,11 @@ const Popup = (props) => {
     let playable = true;
 
     if (checkWin(props.correctLetters, props.wrongLetters, props.selectedWord) === "win") {
-        finalMessage = "You Win!";
+        finalMessage = `You Win! The word was "${props.selectedWord}".`;
         playable = false;
     } else if (checkWin(props.correctLetters, props.wrongLetters, props.selectedWord) === "lose") {
         finalMessage = "You Lose!";
-        finalMessageRevealWord = `The word was ${props.selectedWord}`;
+        finalMessageRevealWord = `The word was "${props.selectedWord}".`;
         playable = false;
     }
 

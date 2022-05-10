@@ -7,13 +7,15 @@ import Word from './components/Word';
 import Popup from './components/Popup';
 import Notification from './components/Notification';
 import {ShowNotification as show} from './helpers/helpers';
+import wordlist from './assets/wordlist.json';
 
 
-const words = ['bruh'];
+const words = wordlist;
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
 
 let playable = true;
+let difficulty = 0;
 
 const correctLetters = [];
 const wrongLetters = [];
