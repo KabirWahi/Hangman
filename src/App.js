@@ -10,19 +10,8 @@ import { ShowNotification as show } from './helpers/helpers';
 import wordlist from './assets/wordlist.json';
 
 
-const words = ['balls', 'the balls'];
+const words = wordlist;
 let selectedWord = words[Math.floor(Math.random() * words.length)];
-if (selectedWord.includes(' ')) {
-  let hasSpace = 1;
-}
-
-
-let playable = true;
-let difficulty = 0;
-
-
-const correctLetters = [];
-const wrongLetters = [];
 
 function App() {
   const [playable, setPlayable] = useState(true);
