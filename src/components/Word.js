@@ -4,11 +4,15 @@ function Word(props) {
     return (
         <div className="word">
             {props.selectedWord.split('').map((letter, index) => {
-                return (
-                    <span className="letter" key={index}>
-                        {props.correctLetters.includes(letter) ? letter : ''}
-                    </span>
-                )
+                if (letter !== ' ') {
+                    return (
+                        <span className="letter" key={index}>
+                            {props.correctLetters.includes(letter) ? letter : ''}
+                        </span>
+                    )
+                } else {
+                    return (<label>&nbsp;&nbsp;<span></span></label>)
+                }
             })}
         </div>
     )

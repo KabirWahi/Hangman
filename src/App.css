@@ -2,10 +2,13 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
 body {
   background-color: #34495e;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Press Start 2P';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +54,7 @@ h1 {
 }
 
 .wrong-letters-container span {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .word {
@@ -65,7 +68,7 @@ h1 {
 .letter {
   border-bottom: 3px solid #2980b9;
   display: inline-flex;
-  font-size: 30px;
+  font-size: 24px;
   align-items: center;
   justify-content: center;
   margin: 0 3px;
@@ -127,4 +130,26 @@ h1 {
 
 .notification-container.show {
   transform: translateY(-50px);
+}
+
+.keyboard {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.letters {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid lightgrey;
+  background-color: #292929;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: 'Press Start 2P';
+  display: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
