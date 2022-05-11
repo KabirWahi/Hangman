@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/footer/footer';
 import Figure from './components/Figure';
 import WrongLetters from './components/WrongLetters';
 import Word from './components/Word';
@@ -103,6 +104,7 @@ function App() {
 
       <Popup playAgain={playAgain} correctLetters={correctLetters} wrongLetters={wrongLetters} selectedWord={selectedWord} setPlayable={setPlayable} />
       <Notification ShowNotification={ShowNotification} />
+      <Footer />
     </>
   );
 }
